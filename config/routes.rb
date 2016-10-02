@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => "listings#index"
   # Routes for the Available_day resource:
   # CREATE
   get "/available_days/new", :controller => "available_days", :action => "new"
